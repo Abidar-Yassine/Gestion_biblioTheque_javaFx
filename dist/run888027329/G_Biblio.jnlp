@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="G_Biblio.jnlp">
+  <information>
+    <title>G_Biblio</title>
+    <vendor>yassine</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="G_Biblio.jar" size="409379" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\mysql-connector-java-3.1.13-bin.jar" size="456729" download="eager" />
+    <jar href="lib\mysql-connector-java-5.0.4-bin.jar" size="495944" download="eager" />
+    <jar href="lib\mysql-connector-java-5.0.8-bin.jar" size="540852" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.18.jar" size="2330539" download="eager" />
+    <jar href="lib\protobuf-java-3.6.1.jar" size="1421323" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="G_Biblio" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="g_biblio.G_Biblio"  name="G_Biblio" />
+  <update check="always"/>
+</jnlp>

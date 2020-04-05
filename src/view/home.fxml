@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="847.0" prefWidth="1027.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.HomeController">
+    <stylesheets>
+        <URL value="@/css/home.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="847.0" prefWidth="1027.0">
+         <children>
+            <HBox layoutX="110.0" layoutY="130.0" prefHeight="198.0" prefWidth="786.0">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" prefHeight="198.0" prefWidth="214.0" text="Emprunter Livre">
+                     <HBox.margin>
+                        <Insets left="30.0" right="15.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="188.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@../image/emp.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" prefHeight="198.0" prefWidth="214.0" text="Statistique">
+                     <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="184.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/syrf.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="TOP" layoutX="224.0" layoutY="10.0" prefHeight="198.0" prefWidth="214.0" text="Parametre">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="190.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/sett2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox layoutX="91.0" layoutY="393.0" prefHeight="198.0" prefWidth="786.0">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" prefHeight="202.0" prefWidth="227.0" style="-fx-background-color: #ffcfc1;">
+                     <HBox.margin>
+                        <Insets left="30.0" right="15.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="192.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="198.0" prefWidth="214.0" style="-fx-background-color: #FC2;">
+                     <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="190.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="224.0" layoutY="10.0" prefHeight="198.0" prefWidth="214.0" style="-fx-background-color: #FDE;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="185.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Label fx:id="Btnclicker" alignment="CENTER" contentDisplay="CENTER" prefHeight="79.0" prefWidth="1030.0" style="-fx-background-color: #424242;" text="ButtomClicker" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

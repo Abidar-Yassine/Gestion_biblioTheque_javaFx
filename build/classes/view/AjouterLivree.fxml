@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="698.0" style="-fx-background-color: #212121;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AjouterLivreeController">
+    <stylesheets>
+        <URL value="@/css/ajouterlivree.css" />
+    </stylesheets>
+   <children>
+      <HBox alignment="CENTER" prefHeight="90.0" prefWidth="725.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="732.0" style="-fx-background-color: #FF5722;" text="Ajoute Une Nouvelle Livre " textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <JFXButton layoutX="89.0" layoutY="512.0" onAction="#saveLivre_Auteur" prefHeight="31.0" prefWidth="249.0" style="-fx-background-color: #FF5722; -fx-text-fill: white;" text="Enregistre">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="IsbnLivre" focusColor="#e08e09" layoutX="56.0" layoutY="173.0" prefHeight="31.0" prefWidth="249.0" promptText="Isbn Livre" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="titrLivre" focusColor="#e08e09" layoutX="365.0" layoutY="173.0" prefHeight="31.0" prefWidth="249.0" promptText="Titre" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="longueLiv" focusColor="#e08e09" layoutX="56.0" layoutY="256.0" prefHeight="31.0" prefWidth="249.0" promptText="Longue" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="NbexemPLLIvre" focusColor="#e08e09" layoutX="365.0" layoutY="256.0" prefHeight="31.0" prefWidth="249.0" promptText="Nombre Exemplaire" style="-fx-text-fill: white;" />
+      <Label layoutX="51.0" layoutY="119.0" prefHeight="42.0" prefWidth="140.0" text="  Livre " textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="323.0" prefHeight="42.0" prefWidth="140.0" text="  Auteur" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nomAut" focusColor="#e08e09" layoutX="56.0" layoutY="376.0" onMouseExited="#test" prefHeight="31.0" prefWidth="241.0" promptText="Nom" style="-fx-text-fill: white;" />
+      <JFXTextField fx:id="prenoAut" disable="true" focusColor="#e08e09" layoutX="355.0" layoutY="376.0" prefHeight="31.0" prefWidth="256.0" promptText="Prenom" style="-fx-text-fill: white;" />
+      <JFXComboBox fx:id="ListPays" disable="true" focusColor="#e08e09" layoutX="225.0" layoutY="441.0" prefHeight="31.0" prefWidth="241.0" promptText="Pays" />
+      <JFXButton layoutX="365.0" layoutY="512.0" prefHeight="31.0" prefWidth="249.0" style="-fx-background-color: #FF5722; -fx-text-fill: white;" text="Annuler">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

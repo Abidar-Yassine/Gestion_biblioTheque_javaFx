@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="833.0" prefWidth="1156.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.RaceEvolutionController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="270.0" layoutY="14.0" prefHeight="70.0" prefWidth="601.0" text="Beef Evolution">
+         <font>
+            <Font name="Arial" size="43.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="BeefType" layoutX="69.0" layoutY="214.0" prefHeight="31.0" prefWidth="226.0" promptText="Breed" />
+      <JFXComboBox fx:id="evolution" layoutX="69.0" layoutY="349.0" prefHeight="31.0" prefWidth="226.0" promptText="Evolution" />
+      <JFXButton layoutX="141.0" layoutY="466.0" style="-fx-background-color: #fff;" text="ok" />
+      <Pane layoutX="424.0" layoutY="134.0" prefHeight="348.0" prefWidth="551.0">
+         <children>
+            <BarChart fx:id="A3mida" layoutX="-1.0" layoutY="-1.0" prefHeight="348.0" prefWidth="551.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="x" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="y" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </Pane>
+      <Pane layoutX="20.0" layoutY="512.0" prefHeight="307.0" prefWidth="551.0">
+         <children>
+            <AreaChart fx:id="mon7ana" layoutX="-5.0" prefHeight="307.0" prefWidth="560.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="x1" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="y1" side="LEFT" />
+              </yAxis>
+            </AreaChart>
+         </children>
+      </Pane>
+      <Pane layoutX="591.0" layoutY="512.0" prefHeight="307.0" prefWidth="551.0">
+         <children>
+            <PieChart fx:id="da2ira" prefHeight="307.0" prefWidth="551.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

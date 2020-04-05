@@ -1,0 +1,59 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+#btnDeconect{
+   
+     -fx-font-weight:bold;
+    -fx-background-color: white;
+    -fx-font-size:14;
+    -fx-text-fill: red;
+    /*-fx-border-color:#2196f3;*/
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+}
+.btnDeconect:hover{
+  
+    
+    
+    -fx-font-weight:bold;
+    -fx-background-color: #f44336;
+    -fx-font-size:14;
+    -fx-text-fill: white;
+}
+.userBtn{
+    
+    -fx-font-weight:bold;
+    -fx-background-color: #FFAB91;
+    -fx-font-size:14;
+    -fx-text-fill: white;
+}
+#userBtn:hover{
+    -fx-font-weight:bold;
+    -fx-background-color: white;
+    -fx-font-size:14;
+    -fx-text-fill: #FF5722;
+    /*-fx-border-color:#2196f3;*/
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+}
+
+.button{
+       -fx-font-weight:bold;
+    -fx-background-color: #FF7043;
+    -fx-font-size:14;
+    -fx-text-fill: #D84315;
+     
+}
+.button:hover{ 
+    
+     -fx-font-weight:bold;
+    -fx-background-color: #D84315;
+    -fx-font-size:14;
+    -fx-text-fill: #FF7043;
+    /*-fx-border-color:#2196f3;*/
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+    
+}
